@@ -8,6 +8,12 @@ document.addEventListener("DOMContentLoaded", function () {
         cartItemsList.innerHTML = "";
         let total = 0;
 
+        if (cart.length === 0) {
+            cartItemsList.innerHTML = "<p>Your cart is empty. Please add some items! 🛒</p>";
+            cartTotal.textContent = "Total: $0";
+            return;
+        }
+
         cart.forEach((item, index) => {
             const li = document.createElement("li");
             li.innerHTML = `${item.name} - $${item.price} <button onclick="removeFromCart(${index})">❌</button>`;
@@ -27,9 +33,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     
     checkoutBtn.addEventListener("click", function () {
-        alert("🎉 THANK YOU FOR YOUR PURCHASE! 🎉");
-        localStorage.removeItem("cart"); 
-        loadCart(); 
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        if (cart.length === 0) {
+            alert("🛒 YOUR CART IS EMPTY! PLEASE ADD SOME ITEMS FIRST.");
+        } else {
+            alert("🎉 THANK YOU FOR YOUR PURCHASE! 🎉");
+            localStorage.removeItem("cart"); 
+            loadCart(); 
+        }
     });
 
     loadCart();
