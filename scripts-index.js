@@ -5,7 +5,13 @@ document.addEventListener("DOMContentLoaded", function () {
         { id: 1, name: "Laptop", price: 800, image: "https://via.placeholder.com/150" },
         { id: 2, name: "Phone", price: 500, image: "https://via.placeholder.com/150" },
         { id: 3, name: "Headphones", price: 100, image: "https://via.placeholder.com/150" },
-        { id: 4, name: "Camera", price: 300, image: "https://via.placeholder.com/150" }
+        { id: 4, name: "Camera", price: 300, image: "https://via.placeholder.com/150" },
+        { id: 5, name: "Tablet", price: 400, image: "https://via.placeholder.com/150" },
+        { id: 6, name: "Smartwatch", price: 200, image: "https://via.placeholder.com/150" },
+        { id: 7, name: "Keyboard", price: 50, image: "https://via.placeholder.com/150" },
+        { id: 8, name: "Mouse", price: 40, image: "https://via.placeholder.com/150" },
+        { id: 9, name: "Monitor", price: 250, image: "https://via.placeholder.com/150" },
+        { id: 10, name: "Speaker", price: 150, image: "https://via.placeholder.com/150" }
     ];
 
     function updateCartCount() {
