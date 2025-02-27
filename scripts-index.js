@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const productList = document.getElementById("product-list");
 
     let products = [
-        { id: 1, name: "ASUS ROG STRIX", category: "Laptop", price: 800, image: "image/text.txt/2.jpg" },
+        { id: 1, name: "ASUS ROG STRIX", category: "Laptop", price: 800, image: "image/2.jpg" },
         { id: 2, name: "TecnoPova 6", category: "Phone", price: 500, image: "image/Tecno.jpg" },
         { id: 3, name: "Headphones", category: "Audio", price: 100, image: "image/1.jpg" },
         { id: 4, name: "Canon EOS R7", category: "Electronics", price: 300, image: "image/3.jpg" },
