@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Page</title>
     <link rel="stylesheet" href="styles-index.css">
+
 </head>
 <body>
 
@@ -14,10 +15,17 @@
         <a href="cart.html" id="view-cart-btn">🛒 View Cart (<span id="cart-count">0</span>)</a>
     </header>
 
-    <main>
-        <div id="product-list" class="products">
-            <!-- Products will be added dynamically here -->
+    <div id="slideshow-container">
+        <div id="slideshow">
+            <img src="image/S1.jpg" alt="Laptop"> 
+            <img src="image/S2.jpg" alt="Phone">
+            <img src="image/S3.jpg" alt="Headphones">
+            <img src="image/S4.jpg" alt="Camera">
         </div>
+    </div>
+
+    <main>
+        <div id="product-list" class="products"></div>
     </main>
 
     <script src="scripts-index.js"></script>
