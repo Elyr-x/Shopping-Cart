@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let products = [
         { id: 1, name: "ASUS ROG STRIX", category: "Laptop", price: 800, image: "image/2.jpg" },
         { id: 2, name: "TecnoPova 6", category: "Phone", price: 500, image: "image/Tecno.jpg" },
-        { id: 3, name: "Headphones", category: "Audio", price: 100, image: "image/1.jpg" },
+        { id: 3, name: "Headphones", category: "Audio", price: 100, image: "1.jpg" },
         { id: 4, name: "Canon EOS R7", category: "Electronics", price: 300, image: "image/3.jpg" },
         { id: 5, name: "Apple iPad 10.9 Inches (10th Gen)", category: "Gadget", price: 400, image: "image/4.jpg" },
         { id: 6, name: "NEW H9 Smart Watch", category: "Wearable", price: 200, image: "image/5.jpg" },
